@@ -1,6 +1,12 @@
 .recruited {
-    background-image: url("img\football_767.jpg");
-    background-size: 100%;
-    height: 1000px;
-    width: 100%;
+    background: url("/img/football_767.jpg") no-repeat 0 0/cover;
+}
+
+.surface {
+    height: 50vw;
+        
+}
+
+.google-play {
+    height: 3em;
 }
