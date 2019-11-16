@@ -1,12 +1,73 @@
-.recruited {
-    background: url("/img/football_767.jpg") no-repeat 0 0/cover;
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  @font-face {
+    font-family: opensans-regular;
+    src: url("/fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: opensans-bold;
+    src: url("/fonts/OpenSans-Bold.woff");
+    font-weight: 400;
+    font-style: normal;
 }
+
+body {
+    font-size: 8px;
+    font-family: opensans-bold, serif;
+    font-weight: 700;
+}
+
+.recruited {
+    background: url("/images/football_767.jpg") no-repeat 0 0/cover;
+    background-color: #0a0d35;
+    position: relative;
+    z-index: -2;
+    height: 100vh;
+    fill: white;
+    color: white; 
+}
+
+.recruited::after {
+    content: "";
+    position: absolute;
+    background-color: #0a0d35;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: -1;
+  }
 
 .surface {
-    height: 50vw;
-        
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
 }
 
-.google-play {
-    height: 3em;
+.surface-logo {
+    width: 5em;
+}
+
+.surf {
+    margin-left: 1%;
+    align-self: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.be-recruited {
+    margin-top: 50%;
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+
+.be-sports {
+    padding-left: 2em;
 }
